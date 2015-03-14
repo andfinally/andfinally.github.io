@@ -332,6 +332,11 @@ img {
 	margin: 1rem auto;
 }
 
+.img-left {
+	float: left;
+	margin-right: 1rem;
+}
+
 .margin-bottom {
 	margin-bottom: 2rem;
 }
@@ -369,6 +374,7 @@ tbody tr:nth-child(odd) th {
 
 .page-message {
 	margin-bottom: 2rem;
+	overflow: hidden;
 }
 
 .lead {
