@@ -37,7 +37,7 @@ We also decided to make our site swipeable. Our earlier experiments with a gestu
 
 Achieving responsive content demanded an Ajax single-page application. Inspired by the example of [pjax](http://pjax.heroku.com/), a nifty jQuery plugin that uses pushState to provide a fast Ajax browsing experience with a working back button, our JS ninja [Stephan Fowler](http://stephanfowler.com/) created a plugin that intercepted all internal click events to populate a central zone with the content the user wanted to see.
 
-### Responsive content
+### Responsive content, not just responsive CSS
 
 In an ideal world websites would tailor their content to the available bandwidth. But measuring the device's screen width seemed a more practical way to go. It would enable us to make a reasonable guess at a device's capabilities. It made sense to tailor our content to the same breakpoints we used in our media queries. Stephan set them at 480, 768 and 1024, corresponding to the notional widths of a landscape iPhone, portrait iPad and desktop screen.
 
