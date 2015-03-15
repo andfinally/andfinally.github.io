@@ -15,7 +15,7 @@ tags: []
 
 <img src="/assets/2013/08/metro-bin.png" class="content-img img-right">
 
-Metro is a newspaper read by 3.5 million urban commuters daily. Like other papers, it's engaged with the revolution the smartphone and tablet have caused in people's reading habits. Metro's response to the challenge is to accelerate its evolution from a printed publication into a news brand. Its iPhone and iPad apps are read on 416,000 devices a month, but last year it decided it was also time to rework its [website](http://metro.co.uk).
+Metro is a newspaper read by 3.5 million urban commuters daily. Like other papers, it's engaged with the revolution mobile devices have caused in people's reading habits. Metro's response to the challenge is to accelerate its evolution from a printed publication into a news brand. Its iPhone and iPad apps are read on 416,000 devices a month, but last year it decided it was also time to rework its [website](http://metro.co.uk).
 
 The Metro dev team inherited a site built on the noSQL CRX content repository with XSLT templates and a custom CMS written in Ext JS. It was a complex, problematic, hard-to-maintain, multi-tentacled monster. The developers who had built it had all moved on to other jobs. The CMS was only compatible with a particular version of Firefox. And when the back end eventually developed a persistent, untraceable memory leak it was clearly time for a change.
 
@@ -27,7 +27,7 @@ Our overriding aim was a consistent experience across devices. A responsive desi
 
 <img src="/assets/2013/08/iphone.png" class="content-img">
 
-We were conscious how important speed of response is to success on mobile, so we needed the site to load as quickly as possible. For this reason mere CSS responsiveness wasn't going to be good enough: we had to adapt our content before it got to the client.
+Because speed of response is so important to success on mobile, we thought mere CSS responsiveness wasn't going to be good enough: we had to adapt our content before it got to the client.
 
 We also decided to make our site swipeable. Our earlier experiments with a gesture-sensitive jQuery Mobile front end had suggested that a site that responded to swipes was a better experience on phones and tablets. It would support one of the most engaging features of those devices - and it might encourage readers to view more of our pages.
 
@@ -39,7 +39,7 @@ Achieving responsive content demanded an Ajax single-page application. Inspired 
 
 ### Responsive content
 
-In an ideal world websites would tailor their content to the available bandwidth. But measuring the device's screen width seemed a more practical way to go. It would enable us to make a reasonable guess at a device's capabilities. It made sense to tailor our content to the same breakpoints we used in our media queries. We set them at 480, 768 and 1024, corresponding to the notional widths of a landscape iPhone, portrait iPad and desktop screen.
+In an ideal world websites would tailor their content to the available bandwidth. But measuring the device's screen width seemed a more practical way to go. It would enable us to make a reasonable guess at a device's capabilities. It made sense to tailor our content to the same breakpoints we used in our media queries. Stephan set them at 480, 768 and 1024, corresponding to the notional widths of a landscape iPhone, portrait iPad and desktop screen.
 
 <img src="/assets/2013/08/widths.png" class="content-img">
 
@@ -51,11 +51,11 @@ This approach delivers the greatest data savings in images, but we also reduce b
 
 ### Swiping
 
-To achieve the swipe functionality we forked Matteo Spinelli's [SwipeView](https://github.com/cubiq/SwipeView), a nice jQuery carousel that recognises swipe gestures, and mated it with our responsive content functions. The offspring of this union was a properly responsive site that swiped like a mobile app.
+To achieve the swipe functionality Stephan forked Matteo Spinelli's swipeable image carousel [SwipeView](https://github.com/cubiq/SwipeView) and mated it with our responsive content functions. The offspring of this union was a properly responsive site that swiped like a mobile app.
 
 ## How it works
 
-On first loading, our "Responsive Swipe" plugin checks if the browser supports the HTML5 history API needed for Ajax loading. If it does, it also supports the CSS3 transitions the swipe animation needs. If it doesn't the plugin degrades gracefully: some devices - like older Android phones - don't get swipe, while old desktop browsers and non-JavaScript clients get a traditional site without swipe or Ajax.
+On first loading, the "Responsive Swipe" plugin checks if the browser supports the HTML5 history API needed for Ajax loading. If it does, it also supports the CSS3 transitions the swipe animation needs. If it doesn't the plugin degrades gracefully: some devices - like older Android phones - don't get swipe, while old desktop browsers and non-JavaScript clients get a traditional site without swipe or Ajax.
 
 Just like SwipeView, Responsive Swipe expects this HTML markup on the page:
 
@@ -103,4 +103,6 @@ Added to this was the problem that our page included three different sets of ad 
 
 There are still many things we want to improve. Further optimisation is high on our list - we're currently thinking about better image compression and whether we can load our assets in more intelligent ways. The development process goes on, but we're happy with what we've done so far, and we hope some of what we've learned in building this new style of site will prove useful to other developers.
 
-There's an open source version of the Responsive Swipe jQuery plugin on [GitHub](http://github.com/stephanfowler/responsive-swipe), with documentation on this [demo site](http://humbleself.com/responsive-swipe/).
+---
+
+Stephan Fowler's published an open-source version of the Responsive Swipe jQuery plugin on [GitHub](http://github.com/stephanfowler/responsive-swipe), with documentation on this [demo site](http://humbleself.com/responsive-swipe/).
