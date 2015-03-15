@@ -7,8 +7,8 @@ tags: []
 ---
 
 <div class="message">
-<p>In late 2013 <a href="http://metro.co.uk">Metro</a> removed the swipe functionality described in this post. This was done to simplify the codebase, and because mobile browsers had begun to use the swipe gesture for history navigation.</p>
-<p>The results suggest that a responsive UI, combined with content made to share, are more effective drivers of mobile audience growth than swipe. By November 2013 Metro's global traffic growth had continued, increasing 161% year-on-year to achieve a record 20.1 million UVs. Mobile traffic grew 277% in the period, with 52% of UK traffic on mobile. Social referrals grew by more than 1,000% in 2013. But there are situations where responsive swipe can still be valuable, so I'm leaving this August 2013 article up for anyone who might find it useful.</p>
+<p>This post from August 2013 is about <a href="http://metro.co.uk">Metro's</a> experiences building a swipeable responsive site. A few months after it was written we removed the swipe functionality described here to simplify the codebase, and because mobile browsers had begun to use the swipe gesture for history navigation.</p>
+<p>The results suggest that a responsive UI, combined with content made to share, are more effective drivers of mobile audience growth than swipe. By November 2013 Metro's global traffic growth had continued, increasing 161% year-on-year to achieve a record 20.1 million UVs. Mobile traffic grew 277% in the period, with 52% of UK traffic on mobile. Social referrals grew by more than 1,000% in 2013. But there are situations where responsive swipe can still be valuable, so I'm leaving this article up for anyone who might find it useful.</p>
 </div>
 
 ## Challenge
