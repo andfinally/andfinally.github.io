@@ -7,6 +7,6 @@ tags: [projects]
 comments: true
 ---
 
-My first Backbone app for managing quizzes on metro.co.uk. Data is stored as JSON files using a REST API based on the Slim PHP library. Separate code renders the quizzes in the front end. ([GitHub](https://github.com/andfinally/metro-quizzes).)
+A Backbone app for managing quizzes on metro.co.uk. Data is stored as JSON files using a REST API based on the Slim PHP library. Separate code renders the quizzes in the front end. ([GitHub](https://github.com/andfinally/metro-quizzes).)
 
 <img src="/assets/2015/03/quiz-admin.png" class="content-img">
