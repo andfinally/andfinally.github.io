@@ -337,6 +337,11 @@ img {
 	margin-right: 1rem;
 }
 
+.img-right {
+	float: right;
+	margin-right: 1rem;
+}
+
 .margin-bottom {
 	margin-bottom: 2rem;
 }
